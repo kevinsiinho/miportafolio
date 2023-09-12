@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+main{
+    background-color: #0c0600;
+    color:#d8cbbe; 
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    border: 3px solid transparent;
+    border-image: linear-gradient(150deg, #aca5a6 30%, #f1e9e5 30%) 4;
+}
+
+.place1{
+    grid-row: 1;
+    grid-column: 2;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.place2{
+    grid-row: 1;
+    grid-column: 1;
+    height: 637px;
+}
+
+.title{
+    font-size: 100px;
+    margin-top: 110px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.welcome,.proyectos,.information{
+    margin-left: 80px;
+    
+}
+
+.linea{
+    border-left: 3px solid transparent;
+    border-image: linear-gradient(150deg, #7e7772 50%, #eff2e5 50%) 4;
+}
+
+.welcome p{
+    margin-top: 25px;
+    font-size: 18px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.custom-accordion .accordion-button,.custom-accordion .accordion-item{
+    background-color: #0c0600;
+    color:#d8cbbe; 
+}
+
+.proyectos{
+    margin-top: 60px;
+}
+
+.information{
+    margin-top: 120px;
+}
+ 
+
+.accordion{
+ margin-top: 30px;
+}
+
+#information,#proyects{
+    display: none;
+}
+/*diseñando el menu lateral fijo*/
+
+main .place1 .items{
+    height: 400px;
+    width: 250px;
+    font-size: 22px;
+    box-shadow: 16px 14px 20px black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+main .place1 .items li{
+    margin-top: 80px;
+    border-bottom: solid 1px #6a5542;
+    width: 60%;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+.enlaces{
+    display: inline;
+    margin-right: 50px;
+}
+.enlaces a{
+    border-bottom: solid 1px #6a5542;
+    text-decoration: none;
+    color: #f7f8f1;
+}
+
+img{
+   height: 120px;
+   width: 120px;
+}
+
+#git,#gmail,#hotmail{
+   height: 90px;
+   width: 90px;
+   margin-top: 20px;
+}
+
+
+
+
+.place1 span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, #6a5542);
+    animation:  rotar 5s linear infinite;
+    animation-delay: 5s;
+}
+
+.place1 span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to bottom, transparent, #6a5542);
+    animation:  rotar2 5s linear infinite;
+    animation-delay: 8s;
+}
+
+.place1 span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to left, transparent, #6a5542);
+    animation:  rotar3 5s linear infinite;
+    animation-delay: 5s;
+}
+
+.place1 span:nth-child(4){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to top, transparent, #6a5542);
+    animation:  rotar4 5s linear infinite;
+    animation-delay: 8s;
+}
+
+@keyframes rotar{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes rotar2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes rotar3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes rotar4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
