@@ -34,7 +34,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -40px;
 }
 
 .place1,
@@ -77,13 +76,33 @@ main {
 }
 
 .proyectos{
-    margin-top: 60px;
+    margin-top: 50px;
 }
+
+.scroll-container {
+    width: 100%;      
+    height: 500px;    
+    overflow-y: scroll;
+    padding: 10px; 
+    box-sizing: border-box;
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra de desplazamiento */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la parte de la barra */
+    border-radius: 4px; /* Bordes redondeados */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  }
 
 .information{
     margin-top: 120px;
 }
- 
 
 .accordion{
  margin-top: 30px;
@@ -118,11 +137,11 @@ main .place1 .items li{
     justify-content: right;
 }
 
-
 .enlaces{
     display: inline;
     margin-right: 50px;
 }
+
 .enlaces a{
     border-bottom: solid 1px #6a5542;
     text-decoration: none;
@@ -139,9 +158,6 @@ img{
    width: 90px;
    margin-top: 20px;
 }
-
-
-
 
 .place1 span:nth-child(1){
     position: absolute;
