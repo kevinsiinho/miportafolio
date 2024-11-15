@@ -3,15 +3,17 @@
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
+    background-color: #0c0600;
 }
 
-main{
+main {
     background-color: #0c0600;
-    color:#d8cbbe; 
+    color: #d8cbbe;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: auto;
+    height: 100vh; /* Ajusta al 100% de la altura del viewport */
     border: 3px solid transparent;
     border-image: linear-gradient(150deg, #aca5a6 30%, #f1e9e5 30%) 4;
 }
@@ -29,12 +31,27 @@ main{
     grid-row: 1;
     grid-column: 1;
     height: 637px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.place1,
+.place2{
+    height: 100%; /* Ocupa el 100% de la altura de su contenedor */
 }
 
 .title{
     font-size: 100px;
     margin-top: 110px;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+.welcome,
+.proyectos,
+.information {
+    margin-left: 80px;
 }
 
 .welcome,.proyectos,.information{
@@ -100,6 +117,8 @@ main .place1 .items li{
     display: flex;
     justify-content: right;
 }
+
+
 .enlaces{
     display: inline;
     margin-right: 50px;
